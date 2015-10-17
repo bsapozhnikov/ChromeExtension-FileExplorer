@@ -1,0 +1,17 @@
+{
+    "manifest_version":2,
+    "name":"File Explorer",
+    "version": "0.1",
+    "description":"Improves Chrome's built-in file explorer",
+    "icons":{
+	"128":"folder128.png"
+    },
+    "content_scripts":[
+	{
+	    "matches":["file://*"],
+	    "css":["style.css"],
+	    "js":["jquery.js","script.js"]
+	}
+    ]
+}
+    
